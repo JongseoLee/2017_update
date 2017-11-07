@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.js.ens.hrolling3d_ver2.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="com.js.ens.hrolling3d_ver2.Perspective"
+            id="com.js.ens.hrolling3d_ver2.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="View"
+            class="com.js.ens.hrolling3d_ver2.View"
+            id="com.js.ens.hrolling3d_ver2.view">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               standalone="true"
+               minimized="false"
+               relative="org.eclipse.ui.editorss"
+               relationship="left"
+               id="com.js.ens.hrolling3d_ver2.view">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.New"
+                  label="New 2"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.Open"
+                  label="Open 2"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.Save"
+                  label="Save 2"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.SaveAs"
+                  label="Save As 2"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.Export"
+                  label="Export 2"
+                  style="push">
+            </command>
+            <separator
+                  name="com.js.ens.hrolling3d_ver2.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="com.js.ens.hrolling3d_ver2.command.Result"
+                  label="Result 2"
+                  style="push">
+            </command>
+            <separator
+                  name="com.js.ens.hrolling3d_ver2.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit 2">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_NewHandler"
+            id="com.js.ens.hrolling3d_ver2.command.New"
+            name="New">
+      </command>
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_OpenHandler"
+            id="com.js.ens.hrolling3d_ver2.command.Open"
+            name="Open">
+      </command>
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_SaveHandler"
+            id="com.js.ens.hrolling3d_ver2.command.Save"
+            name="Save">
+      </command>
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_SaveAsHandler"
+            id="com.js.ens.hrolling3d_ver2.command.SaveAs"
+            name="SaveAs">
+      </command>
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_ExportHandler"
+            id="com.js.ens.hrolling3d_ver2.command.Export"
+            name="Export">
+      </command>
+      <command
+            defaultHandler="com.js.ens.hrolling3d_ver2.fileMenuHandler.File_ResultHandler"
+            id="com.js.ens.hrolling3d_ver2.command.Result"
+            name="Result">
+      </command>
+   </extension>
+
+</plugin>

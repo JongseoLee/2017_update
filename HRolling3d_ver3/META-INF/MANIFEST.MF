@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hrolling3d_ver3
+Bundle-SymbolicName: com.js.ens.hrolling3d_ver3;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: JS
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/commons-codec-1.10.jar,
+ lib/jcommon-1.0.23.jar,
+ lib/jfreechart-1.0.19.jar,
+ lib/log4j-1.2.17.jar
