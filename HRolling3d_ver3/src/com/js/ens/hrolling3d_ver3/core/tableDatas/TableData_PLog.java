@@ -37,15 +37,22 @@ public class TableData_PLog {
 	//group1
 	private String wr_len = "";
 	private String wr_div_angle = "";
+	private String wr_chamferX = "";
+	private String wr_chamferY = "";
+	private String wr_round = "";
 	
 	//group2
 	private String bur_len = "";
 	private String bur_div_angle = "";
+	private String bur_chamferX = "";
+	private String bur_chamferY = "";
+	
 	
 	//group3
 	private String p_in = "";
 	private String pl_m = "";
 	private String t_div = "";
+	private String p_cr = "";
 	
 	//group4
 	private String f_r2p = "";
@@ -56,6 +63,10 @@ public class TableData_PLog {
 	private String wr_brot = "";
 	private String bur_trot = "";
 	private String bur_brot = "";
+	
+	//group Roll Material Parameter
+	private String YM_Roll_constant = "";
+	private String PR_Roll_constant = "";
 	
 	//group5
 	private String YM_Constant = "";
@@ -88,6 +99,22 @@ public class TableData_PLog {
 	private String Domain = "";
 	private String ParallelMultiThread = "";
 	private String Thread = "";
+	
+	private String f1f4_wr_min_r = "";
+	private String f5f7_wr_min_r = "";
+	
+	private String f1f4_wr_round_min_r = "";
+	private String f5f7_wr_round_min_r = "";
+	private String f1f7_bur_round_min_r = "";
+
+	private String f1f4_wr_max_round = "";
+	private String f5f7_wr_max_round = "";
+	
+	private String f1f7_bur_min_r = "";
+	private String f1f4_wr_max_cx = "";
+	private String f5f7_wr_max_cx = "";
+	private String f1f7_bur_max_cx = "";
+	
 	
 	public TableData_PLog() {
 		// TODO Auto-generated constructor stub
@@ -135,15 +162,21 @@ public class TableData_PLog {
 		
 		wr_len = obj.getInitValue(InitValue.wr_len_F1);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F1);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F1);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F1);
+		wr_round = obj.getInitValue(InitValue.wr_round_F1);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F1);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F1);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F1);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F1);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F1);
 		pl_m = obj.getInitValue(InitValue.pl_m_F1);
 		t_div = obj.getInitValue(InitValue.t_div_F1);
+		p_cr = obj.getInitValue(InitValue.p_cr_F1);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F1);
@@ -154,6 +187,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F1);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F1);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F1);
+		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F1);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F1);
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F1);
@@ -187,6 +224,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F1);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F1);
 		Thread = obj.getInitValue(InitValue.Thread_F1);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	private void setOtherF2(){
@@ -195,15 +248,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F2);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F2);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F2);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F2);
+		wr_round = obj.getInitValue(InitValue.wr_round_F2);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F2);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F2);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F2);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F2);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F2);
 		pl_m = obj.getInitValue(InitValue.pl_m_F2);
 		t_div = obj.getInitValue(InitValue.t_div_F2);
+		p_cr = obj.getInitValue(InitValue.p_cr_F2);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F2);
@@ -215,6 +274,10 @@ public class TableData_PLog {
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F2);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F2);
 		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F2);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F2);
+				
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F2);
 		YM_Table = obj.getInitValue(InitValue.YM_Table_F2);
@@ -245,6 +308,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F2);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F2);
 		Thread = obj.getInitValue(InitValue.Thread_F2);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	private void setOtherF3(){
@@ -253,15 +332,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F3);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F3);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F3);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F3);
+		wr_round = obj.getInitValue(InitValue.wr_round_F3);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F3);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F3);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F3);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F3);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F3);
 		pl_m = obj.getInitValue(InitValue.pl_m_F3);
 		t_div = obj.getInitValue(InitValue.t_div_F3);
+		p_cr = obj.getInitValue(InitValue.p_cr_F3);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F3);
@@ -272,6 +357,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F3);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F3);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F3);
+		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F3);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F3);
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F3);
@@ -304,6 +393,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F3);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F3);
 		Thread = obj.getInitValue(InitValue.Thread_F3);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	private void setOtherF4(){
@@ -312,15 +417,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F4);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F4);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F4);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F4);
+		wr_round = obj.getInitValue(InitValue.wr_round_F4);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F4);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F4);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F4);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F4);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F4);
 		pl_m = obj.getInitValue(InitValue.pl_m_F4);
 		t_div = obj.getInitValue(InitValue.t_div_F4);
+		p_cr = obj.getInitValue(InitValue.p_cr_F4);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F4);
@@ -331,6 +442,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F4);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F4);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F4);
+		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F4);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F4);
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F4);
@@ -363,6 +478,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F4);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F4);
 		Thread = obj.getInitValue(InitValue.Thread_F4);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 
 	private void setOtherF5(){
@@ -371,15 +502,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F5);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F5);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F5);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F5);
+		wr_round = obj.getInitValue(InitValue.wr_round_F5);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F5);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F5);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F5);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F5);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F5);
 		pl_m = obj.getInitValue(InitValue.pl_m_F5);
 		t_div = obj.getInitValue(InitValue.t_div_F5);
+		p_cr = obj.getInitValue(InitValue.p_cr_F5);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F5);
@@ -390,6 +527,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F5);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F5);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F5);
+
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F5);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F5);		
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F5);
@@ -422,6 +563,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F5);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F5);
 		Thread = obj.getInitValue(InitValue.Thread_F5);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	private void setOtherF6(){
@@ -430,15 +587,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F6);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F6);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F6);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F6);
+		wr_round = obj.getInitValue(InitValue.wr_round_F6);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F6);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F6);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F6);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F6);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F6);
 		pl_m = obj.getInitValue(InitValue.pl_m_F6);
 		t_div = obj.getInitValue(InitValue.t_div_F6);
+		p_cr = obj.getInitValue(InitValue.p_cr_F6);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F6);
@@ -449,6 +612,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F6);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F6);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F6);
+		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F6);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F6);
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F6);
@@ -481,6 +648,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F6);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F6);
 		Thread = obj.getInitValue(InitValue.Thread_F6);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	private void setOtherF7(){
@@ -489,15 +672,21 @@ public class TableData_PLog {
 		obj.readInitValueFile();
 		wr_len = obj.getInitValue(InitValue.wr_len_F7);
 		wr_div_angle = obj.getInitValue(InitValue.wr_div_angle_F7);
+		wr_chamferX = obj.getInitValue(InitValue.wr_chamferX_F7);
+		wr_chamferY = obj.getInitValue(InitValue.wr_chamferY_F7);
+		wr_round = obj.getInitValue(InitValue.wr_round_F7);
 		
 		//group2
 		bur_len = obj.getInitValue(InitValue.bur_len_F7);
 		bur_div_angle = obj.getInitValue(InitValue.bur_div_angle_F7);
+		bur_chamferX = obj.getInitValue(InitValue.bur_chamferX_F7);
+		bur_chamferY = obj.getInitValue(InitValue.bur_chamferY_F7);
 		
 		//group3
 		p_in = obj.getInitValue(InitValue.p_in_F7);
 		pl_m = obj.getInitValue(InitValue.pl_m_F7);
 		t_div = obj.getInitValue(InitValue.t_div_F7);
+		p_cr = obj.getInitValue(InitValue.p_cr_F7);
 		
 		//group4
 		f_r2p = obj.getInitValue(InitValue.f_r2p_F7);
@@ -508,6 +697,10 @@ public class TableData_PLog {
 		wr_brot = obj.getInitValue(InitValue.wr_brot_F7);
 		bur_trot = obj.getInitValue(InitValue.bur_trot_F7);
 		bur_brot = obj.getInitValue(InitValue.bur_brot_F7);
+		
+		// Roll Material parameter
+		YM_Roll_constant = obj.getInitValue(InitValue.YM_Roll_Constant_F7);
+		PR_Roll_constant = obj.getInitValue(InitValue.PR_Roll_Constant_F7);
 		
 		//group5
 		YM_Constant = obj.getInitValue(InitValue.YM_Constant_F7);
@@ -540,6 +733,22 @@ public class TableData_PLog {
 		Domain = obj.getInitValue(InitValue.Domain_F7);
 		ParallelMultiThread = obj.getInitValue(InitValue.ParallelMultiThread_F7);
 		Thread = obj.getInitValue(InitValue.Thread_F7);
+		
+		// Other 
+		f1f4_wr_min_r = obj.getInitValue(InitValue.f1f4_wr_min_r);
+		f5f7_wr_min_r = obj.getInitValue(InitValue.f5f7_wr_min_r);
+		
+		f1f4_wr_round_min_r = obj.getInitValue(InitValue.f1f4_wr_round_min_r);
+		f5f7_wr_round_min_r = obj.getInitValue(InitValue.f5f7_wr_round_min_r);
+		f1f7_bur_round_min_r = obj.getInitValue(InitValue.f1f7_bur_round_min_r);
+		
+		f1f4_wr_max_round = obj.getInitValue(InitValue.f1f4_wr_max_round);
+		f5f7_wr_max_round = obj.getInitValue(InitValue.f5f7_wr_max_round);
+
+		f1f7_bur_min_r = obj.getInitValue(InitValue.f1f7_bur_min_r);
+		f1f4_wr_max_cx = obj.getInitValue(InitValue.f1f4_wr_max_cx);
+		f5f7_wr_max_cx = obj.getInitValue(InitValue.f5f7_wr_max_cx);
+		f1f7_bur_max_cx = obj.getInitValue(InitValue.f1f7_bur_max_cx);
 	}
 	
 	public String getBUR_TDIA() {
@@ -750,6 +959,30 @@ public class TableData_PLog {
 		this.wr_div_angle = wr_div_angle;
 	}
 
+	public String getWr_chamferX() {
+		return wr_chamferX;
+	}
+
+	public void setWr_chamferX(String wr_chamferX) {
+		this.wr_chamferX = wr_chamferX;
+	}
+
+	public String getWr_chamferY() {
+		return wr_chamferY;
+	}
+
+	public void setWr_chamferY(String wr_chamferY) {
+		this.wr_chamferY = wr_chamferY;
+	}
+
+	public String getWr_round() {
+		return wr_round;
+	}
+
+	public void setWr_round(String wr_round) {
+		this.wr_round = wr_round;
+	}
+
 	public String getBur_len() {
 		return bur_len;
 	}
@@ -764,6 +997,22 @@ public class TableData_PLog {
 
 	public void setBur_div_angle(String bur_div_angle) {
 		this.bur_div_angle = bur_div_angle;
+	}
+
+	public String getBur_chamferX() {
+		return bur_chamferX;
+	}
+
+	public void setBur_chamferX(String bur_chamferX) {
+		this.bur_chamferX = bur_chamferX;
+	}
+
+	public String getBur_chamferY() {
+		return bur_chamferY;
+	}
+
+	public void setBur_chamferY(String bur_chamferY) {
+		this.bur_chamferY = bur_chamferY;
 	}
 
 	public String getP_in() {
@@ -790,6 +1039,14 @@ public class TableData_PLog {
 		this.t_div = t_div;
 	}
 
+	public String getP_cr() {
+		return p_cr;
+	}
+
+	public void setP_cr(String p_cr) {
+		this.p_cr = p_cr;
+	}
+
 	public String getF_r2p() {
 		return f_r2p;
 	}
@@ -804,6 +1061,22 @@ public class TableData_PLog {
 
 	public void setF_r2r(String f_r2r) {
 		this.f_r2r = f_r2r;
+	}
+
+	public String getYM_Roll_constant() {
+		return YM_Roll_constant;
+	}
+
+	public void setYM_Roll_constant(String yM_Roll_constant) {
+		YM_Roll_constant = yM_Roll_constant;
+	}
+
+	public String getPR_Roll_constant() {
+		return PR_Roll_constant;
+	}
+
+	public void setPR_Roll_constant(String pR_Roll_constant) {
+		PR_Roll_constant = pR_Roll_constant;
 	}
 
 	public String getYM_Value() {
@@ -1077,6 +1350,94 @@ public class TableData_PLog {
 	public void setBur_brot(String bur_brot) {
 		this.bur_brot = bur_brot;
 	}
+	
+	public String getF1f4_wr_min_r() {
+		return f1f4_wr_min_r;
+	}
+
+	public void setF1f4_wr_min_r(String f1f4_wr_min_r) {
+		this.f1f4_wr_min_r = f1f4_wr_min_r;
+	}
+
+	public String getF5f7_wr_min_r() {
+		return f5f7_wr_min_r;
+	}
+
+	public void setF5f7_wr_min_r(String f5f7_wr_min_r) {
+		this.f5f7_wr_min_r = f5f7_wr_min_r;
+	}
+
+	public String getF1f4_wr_round_min_r() {
+		return f1f4_wr_round_min_r;
+	}
+
+	public void setF1f4_wr_round_min_r(String f1f4_wr_round_min_r) {
+		this.f1f4_wr_round_min_r = f1f4_wr_round_min_r;
+	}
+
+	public String getF5f7_wr_round_min_r() {
+		return f5f7_wr_round_min_r;
+	}
+
+	public void setF5f7_wr_round_min_r(String f5f7_wr_round_min_r) {
+		this.f5f7_wr_round_min_r = f5f7_wr_round_min_r;
+	}
+
+	public String getF1f7_bur_round_min_r() {
+		return f1f7_bur_round_min_r;
+	}
+
+	public void setF1f7_bur_round_min_r(String f1f7_bur_round_min_r) {
+		this.f1f7_bur_round_min_r = f1f7_bur_round_min_r;
+	}
+
+	public String getF1f4_wr_max_round() {
+		return f1f4_wr_max_round;
+	}
+
+	public void setF1f4_wr_max_round(String f1f4_wr_max_round) {
+		this.f1f4_wr_max_round = f1f4_wr_max_round;
+	}
+
+	public String getF5f7_wr_max_round() {
+		return f5f7_wr_max_round;
+	}
+
+	public void setF5f7_wr_max_round(String f5f7_wr_max_round) {
+		this.f5f7_wr_max_round = f5f7_wr_max_round;
+	}
+
+	public String getF1f7_bur_min_r() {
+		return f1f7_bur_min_r;
+	}
+
+	public void setF1f7_bur_min_r(String f1f7_bur_min_r) {
+		this.f1f7_bur_min_r = f1f7_bur_min_r;
+	}
+
+	public String getF1f4_wr_max_cx() {
+		return f1f4_wr_max_cx;
+	}
+
+	public void setF1f4_wr_max_cx(String f1f4_wr_max_cx) {
+		this.f1f4_wr_max_cx = f1f4_wr_max_cx;
+	}
+
+	public String getF5f7_wr_max_cx() {
+		return f5f7_wr_max_cx;
+	}
+
+	public void setF5f7_wr_max_cx(String f5f7_wr_max_cx) {
+		this.f5f7_wr_max_cx = f5f7_wr_max_cx;
+	}
+
+	public String getF1f7_bur_max_cx() {
+		return f1f7_bur_max_cx;
+	}
+
+	public void setF1f7_bur_max_cx(String f1f7_bur_max_cx) {
+		this.f1f7_bur_max_cx = f1f7_bur_max_cx;
+	}
 
 	public ArrayList<String> getDB(){
 		ArrayList<String> DB = new ArrayList<String>();
@@ -1090,11 +1451,16 @@ public class TableData_PLog {
 		DB.add(UILabel.WR_Crown					+"_"+this.STAND+"="+	this.WR_ICRN);
 		DB.add(UILabel.WR_Length				+"_"+this.STAND+"="+	this.wr_len);	
 		DB.add(UILabel.WR_Mesh_Angle			+"_"+this.STAND+"="+	this.wr_div_angle);
+		DB.add(UILabel.WR_Chamfer_X				+"_"+this.STAND+"="+	this.wr_chamferX);
+		DB.add(UILabel.WR_Chamfer_Y				+"_"+this.STAND+"="+	this.wr_chamferY);
+		DB.add(UILabel.WR_Round					+"_"+this.STAND+"="+	this.wr_round);
 		//group2
 		DB.add(UILabel.Top_BUR_Diameter			+"_"+this.STAND+"="+	this.BUR_TDIA);
 		DB.add(UILabel.Bottom_BUR_Diameter		+"_"+this.STAND+"="+	this.BUR_BDIA);
 		DB.add(UILabel.BUR_Length				+"_"+this.STAND+"="+	this.bur_len);
 		DB.add(UILabel.BUR_Mesh_Angle			+"_"+this.STAND+"="+	this.bur_div_angle);
+		DB.add(UILabel.BUR_Chamfer_X			+"_"+this.STAND+"="+	this.bur_chamferX);
+		DB.add(UILabel.BUR_Chamfer_Y			+"_"+this.STAND+"="+	this.bur_chamferY);
 		//group3
 		DB.add(UILabel.Thickness				+"_"+this.STAND+"="+	this.ENTRY_THK);
 		DB.add(UILabel.Width					+"_"+this.STAND+"="+	this.STP_WID);
@@ -1104,6 +1470,7 @@ public class TableData_PLog {
 		DB.add(UILabel.Initial_Position			+"_"+this.STAND+"="+	this.p_in);
 		DB.add(UILabel.Mesh_Length				+"_"+this.STAND+"="+	this.pl_m);
 		DB.add(UILabel.Thickness_Mesh_Divisions	+"_"+this.STAND+"="+	this.t_div);
+		DB.add(UILabel.Plate_Crown				+"_"+this.STAND+"="+	this.p_cr);
 		//group4
 		DB.add(UILabel.Velocity					+"_"+this.STAND+"="+	this.SPEED);
 		DB.add(UILabel.Roll_Gap					+"_"+this.STAND+"="+	this.ROL_GAP);
@@ -1120,6 +1487,9 @@ public class TableData_PLog {
 		DB.add(UILabel.Bottom_WR_Rot_Vel_RPM	+"_"+this.STAND+"="+	this.wr_brot);
 		DB.add(UILabel.Top_BUR_Rot_Vel_RPM		+"_"+this.STAND+"="+	this.bur_trot);
 		DB.add(UILabel.Bottom_BUR_Rot_Vel_RPM	+"_"+this.STAND+"="+	this.bur_brot);
+		// Roll Material Parameter
+		DB.add(UILabel.Roll_Youngs_Modulus		+"_"+this.STAND+"="+	this.YM_Roll_constant);
+		DB.add(UILabel.Roll_Poissons_Ratio		+"_"+this.STAND+"="+	this.PR_Roll_constant);
 		//group5
 		DB.add("YM_Constant"					+"_"+this.STAND+"="+	this.YM_Constant);
 		DB.add("YM_Table"						+"_"+this.STAND+"="+	this.YM_Table);
@@ -1166,6 +1536,56 @@ public class TableData_PLog {
 		DB.add("#########################################");		
 		
 		return DB;
+	}
+	
+	public ArrayList<String> getCommonDB(){
+		ArrayList<String> result = new ArrayList<String>();
+		/*
+		private String f1f4_wr_min_r = "";
+		private String f5f7_wr_min_r = "";
+		
+		private String f1f4_wr_round_min_r = "";
+		private String f5f7_wr_round_min_r = "";
+		private String f1f7_bur_round_min_r = "";
+
+		private String f1f4_wr_max_round = "";
+		private String f5f7_wr_max_round = "";
+		
+		private String f1f7_bur_min_r = "";
+		private String f1f4_wr_max_cx = "";
+		private String f5f7_wr_max_cx = "";
+		private String f1f7_bur_max_cx = "";
+		public static String f1f4_wr_min_r = "f1f4_wr_min_r";
+		public static String f5f7_wr_min_r = "f5f7_wr_min_r";
+		
+		public static String f1f4_wr_round_min_r = "f1f4_wr_round_min_r";
+		public static String f5f7_wr_round_min_r = "f5f7_wr_round_min_r";
+		public static String f1f7_bur_round_min_r = "f1f7_bur_round_min_r";
+
+		public static String f1f4_wr_max_round = "f1f4_wr_max_round";
+		public static String f5f7_wr_max_round = "f5f7_wr_max_round";
+
+		public static String f1f7_bur_min_r = "f1f7_bur_min_r";
+		public static String f1f4_wr_max_cx = "f1f4_wr_max_cx";
+		public static String f5f7_wr_max_cx = "f5f7_wr_max_cx";
+		public static String f1f7_bur_max_cx = "f1f7_bur_max_cx";
+		// */
+		result.add("#########################################");
+		result.add("f1f4_wr_min_r"+"="+this.f1f4_wr_min_r);
+		result.add("f5f7_wr_min_r"+"="+this.f5f7_wr_min_r);
+		
+		result.add("f1f4_wr_round_min_r"+"="+this.f1f4_wr_round_min_r);
+		result.add("f5f7_wr_round_min_r"+"="+this.f5f7_wr_round_min_r);
+		result.add("f1f7_bur_round_min_r"+"="+this.f1f7_bur_round_min_r);
+
+		result.add("f1f4_wr_max_round"+"="+this.f1f4_wr_max_round);
+		result.add("f5f7_wr_max_round"+"="+this.f5f7_wr_max_round);
+		
+		result.add("f1f7_bur_min_r"+"="+this.f1f7_bur_min_r);
+		result.add("f1f4_wr_max_cx"+"="+this.f1f4_wr_max_cx);
+		result.add("f5f7_wr_max_cx"+"="+this.f5f7_wr_max_cx);
+		result.add("f1f7_bur_max_cx"+"="+this.f1f7_bur_max_cx);
+		return result;
 	}
 	
 	public void printAllData(){

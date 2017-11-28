@@ -1,5 +1,7 @@
 package com.js.ens.hrolling3d_ver3;
 
+import javax.swing.JOptionPane;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.eclipse.equinox.app.IApplication;
@@ -10,6 +12,8 @@ import org.eclipse.ui.PlatformUI;
 
 import com.js.ens.hrolling3d_ver3.Application;
 import com.js.ens.hrolling3d_ver3.FolderTree;
+import com.js.ens.hrolling3d_ver3.core.LicenseCheck;
+import com.js.util.myUtil;
 
 /**
  * This class controls all aspects of the application's execution
@@ -29,7 +33,7 @@ public class Application implements IApplication {
 		System.setProperty("LogPath.ens", FolderTree.folderPath_Log);
 		PropertyConfigurator.configure(FolderTree.filePath_LogProperties);
 		log.info("Start HRolling-3d-ver3");
-		/*
+		/* */
 		// Using License 
 		LicenseCheck engine = new LicenseCheck();
 		try {
@@ -41,7 +45,7 @@ public class Application implements IApplication {
 			}else{
 				//LIcense Error
 				log.error("License is Error..."+myUtil.getCurrentDate());
-				JOptionPane.showMessageDialog(null,"License Error" , "HRolling-3d", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,"License Error" , "HRolling-3d_ver3", JOptionPane.ERROR_MESSAGE);
 				returnCode = IApplication.EXIT_OK;
 			}
 			
@@ -59,7 +63,7 @@ public class Application implements IApplication {
 			display.dispose();
 		}
 		// */
-		/* */
+		/* 
 		//  Without Checking License
 		try {
 			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
