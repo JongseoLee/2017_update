@@ -76,7 +76,7 @@ public class LicenseCheck {
 		//String progPath = System.getProperty("user.dir");
 		//String licenseKeyPath = myUtil.setPath(myUtil.setPath(progPath, "configuration"),"Key.ens");
 		//String licenseKeyPath = FolderTree.filePath_License;
-		Reader reader = new Reader(FolderTree.filePath_License);
+		Reader reader = new Reader(FolderTree.filePath_LicenseKey);
 		reader.running();
 		fileDataList = reader.getFileDataList();
 		this.splitPrivateKey(fileDataList);

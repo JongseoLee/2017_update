@@ -8,6 +8,7 @@ public class FolderTree {
 	
 	// Folder name 
 	private static final String appShortName = "hr3d_";
+	private static final String folderName_configuration ="configuration";
 	private static final String folderName_Config = appShortName+"Config";
 	private static final String folderName_Log = appShortName+"Log";
 	private static final String folderName_Module = appShortName+"Module";
@@ -60,6 +61,7 @@ public class FolderTree {
 	
 	// Folder Path 
 	public static final String folderPath_AppFolder = System.getProperty("user.dir");
+	public static final String folderPath_configuration = myUtil.setPath(folderPath_AppFolder, folderName_configuration);
 	public static final String folderPath_Config = myUtil.setPath(folderPath_AppFolder, folderName_Config);
 	public static final String folderPath_Log = myUtil.setPath(folderPath_AppFolder, folderName_Log);
 	public static final String folderPath_Module = myUtil.setPath(folderPath_AppFolder, folderName_Module);
@@ -78,8 +80,8 @@ public class FolderTree {
 	public static final String filePath_InitValue = myUtil.setPath(folderPath_Config, fileName_InitValue);
 	public static final String filePath_TableColumLabel = myUtil.setPath(folderPath_Config, fileName_TableColumLabel);
 	public static final String filePath_UILabel = myUtil.setPath(folderPath_Config, fileName_UILabel);
-	public static final String filePath_License = myUtil.setPath(folderPath_Config, fileName_License);
-	public static final String filePath_LicenseKey = myUtil.setPath(folderPath_Config, fileName_LicenseKey);
+	public static final String filePath_License = myUtil.setPath(folderPath_License, fileName_License);
+	public static final String filePath_LicenseKey = myUtil.setPath(folderPath_configuration, fileName_LicenseKey);
 	public static final String filePath_LogProperties = myUtil.setPath(folderPath_Config, fileName_LogProperties);
 	public static final String filePath_MappingTable = myUtil.setPath(folderPath_Config, fileName_mappingTable);
 	

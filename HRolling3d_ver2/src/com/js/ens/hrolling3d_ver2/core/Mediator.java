@@ -106,6 +106,18 @@ public class Mediator {
 	public ICommand C_textWRMeshAngle;
 	public static String TEXT_textWRMeshAngle = "textWRMeshAngle";
 	
+	private Text textWRChamferX;
+	public ICommand C_textWRChamferX;
+	public static String Text_textWRChamferX = "textWRChamferX";
+	
+	private Text textWRChamferY;
+	public ICommand C_textWRChamferY;
+	public static String Text_textWRChamferY = "textWRChamferY";
+	
+	private Text textWRRound;
+	public ICommand C_textWRRound;
+	public static String Text_textWRRound = "textWRRound";
+	
 	
 	//group 2
 	private Group grpBackUpRollburParameter;
@@ -125,6 +137,14 @@ public class Mediator {
 	private Text textBURMeshAngle;
 	public ICommand C_textBURMeshAngle;
 	public static String TEXT_textBURMeshAngle = "textBURMeshAngle";
+	
+	public Text textBURChamferX;
+	public ICommand C_textBURChamferX;
+	public static String TEXT_textBURChamferX = "textBURChamferX";
+	
+	public Text textBURChamferY;
+	public ICommand C_textBURChamferY;
+	public static String TEXT_textBURChamferY = "textBURChamferY";
 	
 	
 	//group 3
@@ -162,6 +182,9 @@ public class Mediator {
 	public ICommand C_textThicknessMeshDivisions;
 	public static String TEXT_textThicknessMeshDivisions = "textThicknessMeshDivisions";
 	
+	private Text textPlateCrown;
+	public ICommand C_textPlateCrown;
+	public static String TEXT_textPlateCrown = "textPlateCrown";
 	
 	//group 4
 	private Group grpProcessInformation;
@@ -225,6 +248,17 @@ public class Mediator {
 	private Text textBottomBURRotVel;
 	public ICommand C_textBottomBURRotVel;
 	public static String TEXT_textBottomBURRotVel = "textBottomBURRotVel";
+	
+	// group Roll Material Parameter
+	private Group grpRollMaterialParameter;
+	
+	private Text textRollYoungsModulus;
+	public ICommand C_textRollYoungsModulus;
+	public static String TEXT_textRollYoungsModulus = "textRollYoungsModulus";
+	
+	private Text textRollPoissonsRatio;
+	public ICommand C_textRollPoissonsRatio;
+	public static String TEXT_textRollPoissonsRatio = "textRollPoissonsRatio";
 	
 	//group 5
 	private Group grpMaterialParameter;
@@ -647,6 +681,48 @@ public class Mediator {
 	public void setC_textWRMeshAngle(ICommand c_textWRMeshAngle) {
 		C_textWRMeshAngle = c_textWRMeshAngle;
 	}
+
+	
+	public Text getTextWRChamferX() {
+		return textWRChamferX;
+	}
+	public void setTextWRChamferX(Text textWRChamferX) {
+		this.textWRChamferX = textWRChamferX;
+	}
+	public ICommand getC_textWRChamferX() {
+		return C_textWRChamferX;
+	}
+	public void setC_textWRChamferX(ICommand c_textWRChamferX) {
+		C_textWRChamferX = c_textWRChamferX;
+	}
+	
+	
+	public Text getTextWRChamferY() {
+		return textWRChamferY;
+	}
+	public void setTextWRChamferY(Text textWRChamferY) {
+		this.textWRChamferY = textWRChamferY;
+	}
+	public ICommand getC_textWRChamferY() {
+		return C_textWRChamferY;
+	}
+	public void setC_textWRChamferY(ICommand c_textWRChamferY) {
+		C_textWRChamferY = c_textWRChamferY;
+	}
+	
+	
+	public Text getTextWRRound() {
+		return textWRRound;
+	}
+	public void setTextWRRound(Text textWRRound) {
+		this.textWRRound = textWRRound;
+	}
+	public ICommand getC_textWRRound() {
+		return C_textWRRound;
+	}
+	public void setC_textWRRound(ICommand c_textWRRound) {
+		C_textWRRound = c_textWRRound;
+	}
 	
 	
 	public Group getGrpBackUpRollburParameter() {
@@ -711,6 +787,37 @@ public class Mediator {
 	public void setC_textBURMeshAngle(ICommand c_textBURMeshAngle) {
 		C_textBURMeshAngle = c_textBURMeshAngle;
 	}
+	
+	public Text getTextBURChamferX() {
+		return textBURChamferX;
+	}
+	public void setTextBURChamferX(Text textBURChamferX) {
+		this.textBURChamferX = textBURChamferX;
+	}
+	public ICommand getC_textBURChamferX() {
+		return C_textBURChamferX;
+	}
+	public void setC_textBURChamferX(ICommand c_textBURChamferX) {
+		C_textBURChamferX = c_textBURChamferX;
+	}
+	
+	
+	public Text getTextBURChamferY() {
+		return textBURChamferY;
+	}
+	public void setTextBURChamferY(Text textBURChamferY) {
+		this.textBURChamferY = textBURChamferY;
+	}
+	public ICommand getC_textBURChamferY() {
+		return C_textBURChamferY;
+	}
+	public void setC_textBURChamferY(ICommand c_textBURChamferY) {
+		C_textBURChamferY = c_textBURChamferY;
+	}
+	
+	
+	
+	
 	
 	
 	public Group getGrpPlateParameter() {
@@ -831,6 +938,57 @@ public class Mediator {
 	public void setC_textThicknessMeshDivisions(
 			ICommand c_textThicknessMeshDivisions) {
 		C_textThicknessMeshDivisions = c_textThicknessMeshDivisions;
+	}
+	
+	
+	public Text getTextPlateCrown() {
+		return textPlateCrown;
+	}
+	public void setTextPlateCrown(Text textPlateCrown) {
+		this.textPlateCrown = textPlateCrown;
+	}
+	public ICommand getC_textPlateCrown() {
+		return C_textPlateCrown;
+	}
+	public void setC_textPlateCrown(ICommand c_textPlateCrown) {
+		C_textPlateCrown = c_textPlateCrown;
+	}
+	
+	
+	
+	public Group getGrpRollMaterialParameter() {
+		return grpRollMaterialParameter;
+	}
+	public void setGrpRollMaterialParameter(Group grpRollMaterialParameter) {
+		this.grpRollMaterialParameter = grpRollMaterialParameter;
+	}
+	
+	
+	public Text getTextRollYoungsModulus() {
+		return textRollYoungsModulus;
+	}
+	public void setTextRollYoungsModulus(Text textRollYoungsModulus) {
+		this.textRollYoungsModulus = textRollYoungsModulus;
+	}
+	public ICommand getC_textRollYoungsModulus() {
+		return C_textRollYoungsModulus;
+	}
+	public void setC_textRollYoungsModulus(ICommand c_textRollYoungsModulus) {
+		C_textRollYoungsModulus = c_textRollYoungsModulus;
+	}
+	
+	
+	public Text getTextRollPoissonsRatio() {
+		return textRollPoissonsRatio;
+	}
+	public void setTextRollPoissonsRatio(Text textRollPoissonsRatio) {
+		this.textRollPoissonsRatio = textRollPoissonsRatio;
+	}
+	public ICommand getC_textRollPoissonsRatio() {
+		return C_textRollPoissonsRatio;
+	}
+	public void setC_textRollPoissonsRatio(ICommand c_textRollPoissonsRatio) {
+		C_textRollPoissonsRatio = c_textRollPoissonsRatio;
 	}
 	
 	

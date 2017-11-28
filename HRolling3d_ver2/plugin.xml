@@ -48,27 +48,27 @@
                label="File">
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.New"
-                  label="New 2"
+                  label="New"
                   style="push">
             </command>
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.Open"
-                  label="Open 2"
+                  label="Open"
                   style="push">
             </command>
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.Save"
-                  label="Save 2"
+                  label="Save"
                   style="push">
             </command>
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.SaveAs"
-                  label="Save As 2"
+                  label="Save As"
                   style="push">
             </command>
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.Export"
-                  label="Export 2"
+                  label="Export"
                   style="push">
             </command>
             <separator
@@ -77,7 +77,7 @@
             </separator>
             <command
                   commandId="com.js.ens.hrolling3d_ver2.command.Result"
-                  label="Result 2"
+                  label="Result"
                   style="push">
             </command>
             <separator
@@ -86,7 +86,7 @@
             </separator>
             <command
                   commandId="org.eclipse.ui.file.exit"
-                  label="Exit 2">
+                  label="Exit">
             </command>
          </menu>
       </menuContribution>
@@ -123,6 +123,34 @@
             id="com.js.ens.hrolling3d_ver2.command.Result"
             name="Result">
       </command>
+   </extension>
+   <extension
+         id="HRolling3d_ver2"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.js.ens.hrolling3d_ver2.application"
+            name="HRolling3d_ver2">
+         <property
+               name="windowImages"
+               value="icons/ENS3232.PNG">
+         </property>
+         <property
+               name="appName"
+               value="HRolling3d_ver2">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="HRolling3d_ver2"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.js.ens.hrolling3d_ver2.application"
+            name="HRolling3d_ver2">
+         <property
+               name="windowImages"
+               value="icons/ENS3232.PNG">
+         </property>
+      </product>
    </extension>
 
 </plugin>

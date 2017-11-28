@@ -21,7 +21,16 @@ public class HandlerText implements Listener {
 			med.getC_textWRLength().execute();
 		}else if(event.widget == med.getTextWRMeshAngle()){
 			med.getC_textWRMeshAngle().execute();
-		}else if(event.widget == med.getTextTopBURDiameter()){
+		}else if(event.widget == med.getTextWRChamferX()){
+			med.getC_textWRChamferX().execute();
+		}else if(event.widget == med.getTextWRChamferY()){
+			med.getC_textWRChamferY().execute();
+		}else if(event.widget == med.getTextWRRound()){
+			med.getC_textWRRound().execute();
+		}		
+		
+		
+		else if(event.widget == med.getTextTopBURDiameter()){
 			med.getC_textTopBURDiameter().execute();
 		}else if(event.widget == med.getTextBottomBURDiameter()){
 			med.getC_textBottomBURDiameter().execute();
@@ -29,7 +38,15 @@ public class HandlerText implements Listener {
 			med.getC_textBURLength().execute();
 		}else if(event.widget == med.getTextBURMeshAngle()){
 			med.getC_textBURMeshAngle().execute();
-		}else if(event.widget == med.getTextThickness()){
+		}else if(event.widget == med.getTextBURChamferX()){
+			med.getC_textBURChamferX().execute();
+		}else if(event.widget == med.getTextBURChamferY()){
+			med.getC_textBURChamferY().execute();
+		}
+		
+		
+		
+		else if(event.widget == med.getTextThickness()){
 			med.getC_textThickness().execute();
 		}else if(event.widget == med.getTextWidth()){
 			med.getC_textWidth().execute();
@@ -45,7 +62,12 @@ public class HandlerText implements Listener {
 			med.getC_textMeshLength().execute();
 		}else if(event.widget == med.getTextThicknessMeshDivisions()){
 			med.getC_textThicknessMeshDivisions().execute();
-		}else if(event.widget == med.getTextVelocity()){
+		}else if(event.widget == med.getTextPlateCrown()){
+			med.getC_textPlateCrown().execute();
+		}
+		
+		
+		else if(event.widget == med.getTextVelocity()){
 			med.getC_textVelocity().execute();
 		}else if(event.widget == med.getTextRollGap()){
 			med.getC_textRollGap().execute();
@@ -77,7 +99,17 @@ public class HandlerText implements Listener {
 			med.getC_textTopBURRotVel().execute();
 		}else if(event.widget == med.getTextBottomBURRotVel()){
 			med.getC_textBottomBURRotVel().execute();
-		}else if(event.widget == med.getTextYoungsModulus()){
+		}
+		
+		
+		else if(event.widget == med.getTextRollYoungsModulus()){
+			med.getC_textRollYoungsModulus().execute();
+		}else if(event.widget == med.getTextRollPoissonsRatio()){
+			med.getC_textRollPoissonsRatio().execute();
+		}
+		
+		
+		else if(event.widget == med.getTextYoungsModulus()){
 			med.getC_textYoungsModulus().execute();
 		}else if(event.widget == med.getTextFlowStress()){
 			med.getC_textFlowStress().execute();
@@ -87,16 +119,16 @@ public class HandlerText implements Listener {
 			med.getC_textTensileStrength().execute();
 		}else if(event.widget == med.getTextElongation()){
 			med.getC_textElongation().execute();
-		}
-		
-		
-		else if(event.widget == med.getTextThermalExpansionCoefficient()){
+		}else if(event.widget == med.getTextThermalExpansionCoefficient()){
 			med.getC_textThermalExpansionCoefficient().execute();
 		}else if(event.widget == med.getTextPoissonsRatio()){
 			med.getC_textPoissonsRatio().execute();
 		}else if(event.widget == med.getTextMassDensity()){
 			med.getC_textMassDensity().execute();
-		}else if(event.widget == med.getTextAnalysisTime()){
+		}
+		
+		
+		else if(event.widget == med.getTextAnalysisTime()){
 			med.getC_textAnalysisTime().execute();
 		}else if(event.widget == med.getTextNoOfInc()){
 			med.getC_textNoOfInc().execute();

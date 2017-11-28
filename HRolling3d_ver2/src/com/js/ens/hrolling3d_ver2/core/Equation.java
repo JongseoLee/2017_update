@@ -76,6 +76,7 @@ public class Equation {
 	// key 
 	public static String lcase_time = "lcase_time";
 	public static String lcase_dt = "lcase_dt";
+	public static String lcase_inc = "lcase_inc";
 	public static String wr_trot = "wr_trot"; 
 	public static String wr_brot = "wr_brot";
 	public static String bur_trot = "bur_trot";

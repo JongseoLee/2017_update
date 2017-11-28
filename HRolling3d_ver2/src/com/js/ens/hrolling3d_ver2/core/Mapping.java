@@ -184,4 +184,31 @@ public class Mapping {
 	public static String pwid = "#pwid#";
 	public static String plen = "#plen#";
 	public static String pwet = "#pwet#";
+	
+	public static String wr_chamferX = "#wr_chamferX#";
+	public static String wr_chamferY = "#wr_chamferY#";
+	public static String wr_round = "#wr_round#";
+	
+	public static String bur_chamferX = "#bur_chamferX#";
+	public static String bur_chamferY = "#bur_chamferY#";
+	
+	public static String p_cr = "#p_cr#";
+	
+	public static String ym_roll_value = "#YM_ROLL_VALUE#";
+	public static String pr_roll_value = "#PR_ROLL_VALUE#";
+	
+	public static String f1f4_wr_min_r = "#f1f4_wr_min_r#";
+	public static String f5f7_wr_min_r = "#f5f7_wr_min_r#";
+	
+	public static String f1f4_wr_round_min_r = "#f1f4_wr_round_min_r#";
+	public static String f5f7_wr_round_min_r = "#f5f7_wr_round_min_r#";
+	public static String f1f7_bur_round_min_r = "#f1f7_bur_round_min_r#";
+
+	public static String f1f4_wr_max_round = "#f1f4_wr_max_round#";
+	public static String f5f7_wr_max_round = "#f5f7_wr_max_round#";
+	
+	public static String f1f7_bur_min_r = "#f1f7_bur_min_r#";
+	public static String f1f4_wr_max_cx = "#f1f4_wr_max_cx#";
+	public static String f5f7_wr_max_cx = "#f5f7_wr_max_cx#";
+	public static String f1f7_bur_max_cx = "#f1f7_bur_max_cx#";
 }

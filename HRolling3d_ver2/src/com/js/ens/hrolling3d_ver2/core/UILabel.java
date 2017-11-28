@@ -102,6 +102,15 @@ public class UILabel {
 	// 5) wr_div_angle
 	public static String WR_Mesh_Angle="WR Mesh Angle(deg.)";
 	public static String wr_div_angle="wr_div_angle";
+	// 6) wr_chamferX
+	public static String WR_Chamfer_X="WR Chamfer-X(mm)";
+	//WR Chamfer-X(mm)=WR Chamfer-X(mm)
+	// 7) wr_chmferY
+	public static String WR_Chamfer_Y="WR Chamfer-Y(mm)";
+	//WR Chamfer-Y(mm)=WR Chamfer-Y(mm)
+	// 8) wr_round
+	public static String WR_Round = "WR Round(mm)";
+	//WR Round(mm)=WR Round(mm)
 
 	//
 	// -> Backup Roll(BUR) Parameters
@@ -117,7 +126,12 @@ public class UILabel {
 	// 4) bur_div_angle
 	public static String BUR_Mesh_Angle="BUR Mesh Angle(deg.)";
 	public static String bur_div_angle="bur_div_angle";
-	
+	// 5) bur_chamferX
+	public static String BUR_Chamfer_X = "BUR Chamfer-X(mm)";
+	//BUR Chamfer-X(mm)=BUR Chamfer-X(mm)
+	// 6) bur_chamferY
+	public static String BUR_Chamfer_Y = "BUR Chamfer-Y(mm)";
+	//BUR Chamfer-Y(mm)=BUR Chamfer-Y(mm)
 	//
 	//-> Plate Parameters
 	// Title
@@ -141,6 +155,8 @@ public class UILabel {
 	// 8) t_div
 	public static String Thickness_Mesh_Divisions="Thickness Mesh Divisions";
 	public static String t_div="t_div";
+	// 9) p_cr
+	public static String Plate_Crown="Plate Crown";
 	
 	//
 	//-> Plate Parameters
@@ -186,11 +202,19 @@ public class UILabel {
 	public static String Bottom_BUR_Rot_Vel_RPM="Bottom BUR Rot. Vel.(RPM)";
 	public static String bur_brot="bur_brot";
 	
+	//
+	// -> Roll Material Parameter
+	// Title 
+	public static String Roll_Material_Parameter="Roll Material parameter";
+	// 1) 
+	public static String Roll_Youngs_Modulus="Roll Young's Modulus(MPa)";
+	// 2) 
+	public static String Roll_Poissons_Ratio="Roll Poisson's Ratio";
 	
 	//
-	//-> Material parameter
+	//-> Plate Material parameter
 	// Title
-	public static String Material_parameter="Material parameter";
+	public static String Plate_Material_parameter="Plate Material parameter";
 	// 1) 
 	public static String Youngs_Modulus="Young's Modulus(MPa)";
 	// 2)

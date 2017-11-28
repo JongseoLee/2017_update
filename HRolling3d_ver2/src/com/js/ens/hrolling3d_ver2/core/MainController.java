@@ -1725,6 +1725,9 @@ public class MainController {
 					outputDBList.add(line3);
 				}
 			}
+			for(String line4 : this.tableDataPLogList.get(0).getCommonDB()){
+				outputDBList.add(line4);
+			}
 			Writer obj = new Writer(DBPath);
 			obj.running(outputDBList);
 			/*
@@ -1789,6 +1792,9 @@ public class MainController {
 					for(String line3 : obj.getDB()){
 						outputDBList.add(line3);
 					}
+				}
+				for(String line4 : this.tableDataPLogList.get(0).getCommonDB()){
+					outputDBList.add(line4);
 				}
 				Writer obj = new Writer(newDBFilePath);
 				obj.running(outputDBList);
@@ -2633,11 +2639,19 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
+
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
+
+		
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -2647,6 +2661,9 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
+
+		
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -2663,6 +2680,9 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");
@@ -2760,11 +2780,16 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -2774,6 +2799,9 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
+
+		
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -2790,6 +2818,9 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -2878,11 +2909,19 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
+
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
+
+
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -2892,6 +2931,8 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
+
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -2908,6 +2949,9 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -2997,11 +3041,17 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
+
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -3011,6 +3061,7 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -3027,6 +3078,10 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
+		
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -3116,11 +3171,16 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -3130,6 +3190,7 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -3146,6 +3207,9 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -3236,11 +3300,17 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
+
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -3250,6 +3320,7 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -3266,6 +3337,10 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
+		
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -3356,11 +3431,16 @@ public class MainController {
 		obj.setWR_ICRN(med.getTextWRCrown().getText());
 		obj.setWr_len(med.getTextWRLength().getText());
 		obj.setWr_div_angle(med.getTextWRMeshAngle().getText());
+		obj.setWr_chamferX(med.getTextWRChamferX().getText());
+		obj.setWr_chamferY(med.getTextWRChamferY().getText());
+		obj.setWr_round(med.getTextWRRound().getText());
 		//Group2
 		obj.setBUR_TDIA(med.getTextTopBURDiameter().getText());
 		obj.setBUR_BDIA(med.getTextBottomBURDiameter().getText());
 		obj.setBur_len(med.getTextBURLength().getText());
 		obj.setBur_div_angle(med.getTextBURMeshAngle().getText());
+		obj.setBur_chamferX(med.getTextBURChamferX().getText());
+		obj.setBur_chamferY(med.getTextBURChamferY().getText());
 		//Group3
 		obj.setENTRY_THK(med.getTextThickness().getText());
 		obj.setSTP_WID(med.getTextWidth().getText());
@@ -3370,6 +3450,7 @@ public class MainController {
 		obj.setP_in(med.getTextInitialPosition().getText());
 		obj.setPl_m(med.getTextMeshLength().getText());
 		obj.setT_div(med.getTextThicknessMeshDivisions().getText());
+		obj.setP_cr(med.getTextPlateCrown().getText());
 		//Group4
 		obj.setSPEED(med.getTextVelocity().getText());
 		obj.setROL_GAP(med.getTextRollGap().getText());
@@ -3386,6 +3467,10 @@ public class MainController {
 		obj.setWr_brot(med.getTextBottomWRRotVel().getText());
 		obj.setBur_trot(med.getTextTopBURRotVel().getText());
 		obj.setBur_brot(med.getTextBottomBURRotVel().getText());
+		// Roll Material Parameter
+		obj.setYM_Roll_constant(med.getTextRollYoungsModulus().getText());
+		obj.setPR_Roll_constant(med.getTextRollPoissonsRatio().getText());
+		
 		//Group5
 		if(med.getBtnConstant1_YM().getSelection()){
 			obj.setYM_Constant("true");;
@@ -3486,11 +3571,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F1));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F1));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F1));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F1));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F1));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F1));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F1));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F1));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F1));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F1));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F1));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F1));
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F1));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F1));
@@ -3500,6 +3590,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F1));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F1));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F1));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F1));
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F1));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F1));
@@ -3516,6 +3607,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F1));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F1));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F1));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F1));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F1));
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F1).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -3634,11 +3728,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F2));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F2));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F2));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F2));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F2));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F2));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F2));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F2));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F2));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F2));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F2));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F2));
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F2));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F2));
@@ -3648,6 +3747,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F2));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F2));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F2));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F2));
+		
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F2));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F2));
@@ -3664,6 +3765,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F2));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F2));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F2));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F2));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F2));
+				
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F2).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -3775,11 +3880,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F3));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F3));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F3));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F3));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F3));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F3));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F3));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F3));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F3));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F3));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F3));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F3));
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F3));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F3));
@@ -3789,6 +3899,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F3));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F3));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F3));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F3));
+		
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F3));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F3));
@@ -3805,6 +3917,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F3));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F3));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F3));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F3));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F3));
+				
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F3).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -3917,11 +4033,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F4));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F4));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F4));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F4));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F4));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F4));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F4));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F4));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F4));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F4));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F4));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F4));
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F4));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F4));
@@ -3931,6 +4052,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F4));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F4));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F4));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F4));
+
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F4));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F4));
@@ -3947,6 +4070,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F4));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F4));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F4));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F4));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F4));
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F4).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -4058,11 +4184,18 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F5));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F5));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F5));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F5));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F5));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F5));
+		
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F5));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F5));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F5));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F5));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F5));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F5));
+		
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F5));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F5));
@@ -4072,6 +4205,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F5));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F5));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F5));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F5));
+		//System.out.println("===>"+obj.getInitValue(InitValue.p_cr_F5));
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F5));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F5));
@@ -4088,6 +4223,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F5));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F5));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F5));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F5));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F5));
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F5).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -4199,11 +4337,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F6));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F6));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F6));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F6));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F6));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F6));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F6));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F6));
 		med.getTextBURLength().setText(obj.getInitValue(InitValue.bur_len_F6));
 		med.getTextBURMeshAngle().setText(obj.getInitValue(InitValue.bur_div_angle_F6));
+		med.getTextBURChamferX().setText(obj.getInitValue(InitValue.bur_chamferX_F6));
+		med.getTextBURChamferY().setText(obj.getInitValue(InitValue.bur_chamferY_F6));
 		//Group3
 		med.getTextThickness().setText(obj.getInitValue(InitValue.ENTRY_THK_F6));
 		med.getTextWidth().setText(obj.getInitValue(InitValue.STP_WID_F6));
@@ -4213,6 +4356,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getInitValue(InitValue.p_in_F6));
 		med.getTextMeshLength().setText(obj.getInitValue(InitValue.pl_m_F6));
 		med.getTextThicknessMeshDivisions().setText(obj.getInitValue(InitValue.t_div_F6));
+		med.getTextPlateCrown().setText(obj.getInitValue(InitValue.p_cr_F6));
 		//Group4
 		med.getTextVelocity().setText(obj.getInitValue(InitValue.SPEED_mpm_F6));
 		med.getTextRollGap().setText(obj.getInitValue(InitValue.ROL_GAP_F6));
@@ -4229,6 +4373,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getInitValue(InitValue.wr_brot_F6));
 		med.getTextTopBURRotVel().setText(obj.getInitValue(InitValue.bur_trot_F6));
 		med.getTextBottomBURRotVel().setText(obj.getInitValue(InitValue.bur_brot_F6));
+		// Roll Material Parameter
+		med.getTextRollYoungsModulus().setText(obj.getInitValue(InitValue.YM_Roll_Constant_F6));
+		med.getTextRollPoissonsRatio().setText(obj.getInitValue(InitValue.PR_Roll_Constant_F6));
+				
 		//Group5
 		if(obj.getInitValue(InitValue.YM_Constant_F6).toLowerCase().equals("true")){
 			med.getBtnConstant1_YM().setSelection(true);
@@ -4334,12 +4482,17 @@ public class MainController {
 		med.getBtnF6().setSelection(false);
 		med.getBtnF7().setSelection(true);
 		
+		
+		
 		//Group1
 		med.getTextTopWRDiameter().setText(obj.getInitValue(InitValue.WR_TDIA_F7));
 		med.getTextBottomWRDiameter().setText(obj.getInitValue(InitValue.WR_BDIA_F7));
 		med.getTextWRCrown().setText(obj.getInitValue(InitValue.WR_ICRN_F7));
 		med.getTextWRLength().setText(obj.getInitValue(InitValue.wr_len_F7));
 		med.getTextWRMeshAngle().setText(obj.getInitValue(InitValue.wr_div_angle_F7));
+		med.getTextWRChamferX().setText(obj.getInitValue(InitValue.wr_chamferX_F7));
+		med.getTextWRChamferY().setText(obj.getInitValue(InitValue.wr_chamferY_F7));
+		med.getTextWRRound().setText(obj.getInitValue(InitValue.wr_round_F7));
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getInitValue(InitValue.BUR_TDIA_F7));
 		med.getTextBottomBURDiameter().setText(obj.getInitValue(InitValue.BUR_BDIA_F7));
@@ -4520,11 +4673,16 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -4534,6 +4692,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -4550,6 +4709,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
+		
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -4703,11 +4866,17 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
+		
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -4717,6 +4886,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -4733,6 +4903,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -4880,11 +5053,18 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
+		
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
+		
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -4894,6 +5074,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
+		
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -4910,6 +5092,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -5057,11 +5242,17 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
+
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -5071,6 +5262,8 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
+		
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -5087,6 +5280,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -5234,11 +5431,17 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
+		
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -5248,6 +5451,9 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
+		
+		
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -5264,6 +5470,10 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -5411,11 +5621,17 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
+		
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -5425,6 +5641,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -5441,6 +5658,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -5588,11 +5808,17 @@ public class MainController {
 		med.getTextWRCrown().setText(obj.getWR_ICRN());
 		med.getTextWRLength().setText(obj.getWr_len());
 		med.getTextWRMeshAngle().setText(obj.getWr_div_angle());
+		med.getTextWRChamferX().setText(obj.getWr_chamferX());
+		med.getTextWRChamferY().setText(obj.getWr_chamferY());
+		med.getTextWRRound().setText(obj.getWr_round());
 		//Group2
 		med.getTextTopBURDiameter().setText(obj.getBUR_TDIA());
 		med.getTextBottomBURDiameter().setText(obj.getBUR_BDIA());
 		med.getTextBURLength().setText(obj.getBur_len());
 		med.getTextBURMeshAngle().setText(obj.getBur_div_angle());
+		med.getTextBURChamferX().setText(obj.getBur_chamferX());
+		med.getTextBURChamferY().setText(obj.getBur_chamferY());
+
 		//Group3
 		med.getTextThickness().setText(obj.getENTRY_THK());
 		med.getTextWidth().setText(obj.getSTP_WID());
@@ -5602,6 +5828,7 @@ public class MainController {
 		med.getTextInitialPosition().setText(obj.getP_in());
 		med.getTextMeshLength().setText(obj.getPl_m());
 		med.getTextThicknessMeshDivisions().setText(obj.getT_div());
+		med.getTextPlateCrown().setText(obj.getP_cr());
 		//Group4
 		med.getTextVelocity().setText(obj.getSPEED());
 		med.getTextRollGap().setText(obj.getROL_GAP());
@@ -5618,6 +5845,9 @@ public class MainController {
 		med.getTextBottomWRRotVel().setText(obj.getWr_brot());
 		med.getTextTopBURRotVel().setText(obj.getBur_trot());
 		med.getTextBottomBURRotVel().setText(obj.getBur_brot());
+		// Roll Materiap Parameter
+		med.getTextRollYoungsModulus().setText(obj.getYM_Roll_constant());
+		med.getTextRollPoissonsRatio().setText(obj.getPR_Roll_constant());
 		//Group5
 		/*
 		if(obj.getYM_Constant().toLowerCase().equals("true")){
@@ -6599,7 +6829,15 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -6607,7 +6845,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -6623,7 +6867,12 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -6654,6 +6903,14 @@ public class MainController {
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
 		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+			
+		
 		/////////////////////////////////////////////////////////////////////////////////////
 		/////////////////////////////////////////////////////////////////////////////////////
 		/////////////////////////////////////////////////////////////////////////////////////
@@ -6762,7 +7019,16 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -6770,7 +7036,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -6786,7 +7058,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -6816,6 +7092,12 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
 		}
 		
 		/////////////////////////////////////////////////////////////////////////////////////
@@ -6919,7 +7201,15 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -6927,7 +7217,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -6943,7 +7239,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -6973,7 +7273,15 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
 			if(med.getBtnConstant1_YM().getSelection()){
 				obj.setYM_Value(value);
 			}else{
@@ -7057,7 +7365,15 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -7065,7 +7381,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -7081,7 +7403,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -7111,7 +7437,15 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
 			if(med.getBtnConstant1_YM().getSelection()){
 				obj.setYM_Value(value);
 			}else{
@@ -7195,7 +7529,15 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -7203,7 +7545,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -7219,7 +7567,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -7249,7 +7601,15 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
 			if(med.getBtnConstant1_YM().getSelection()){
 				obj.setYM_Value(value);
 			}else{
@@ -7334,7 +7694,15 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -7342,7 +7710,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -7358,7 +7732,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -7388,8 +7766,20 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
-			obj.setYM_Value(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+			if(med.getBtnConstant1_YM().getSelection()){
+				obj.setYM_Value(value);
+			}else{
+				obj.setYM_Value_T(value);
+			}
 		}else if(widgetName.equals(Mediator.TEXT_textFlowStress)){
 			obj.setFS_Value(value);
 		}else if(widgetName.equals(Mediator.TEXT_textYieldStrength)){
@@ -7399,6 +7789,20 @@ public class MainController {
 		}else if(widgetName.equals(Mediator.Text_textElongation)){
 			obj.setE_Value(value);
 		}
+		else if(widgetName.equals(Mediator.TEXT_textThermalExpansionCoefficient)){
+			if(med.getBtnConstant2_TEC().getSelection()){
+				obj.setTEC_Value(value);	
+			}else{
+				obj.setTEC_Value_T(value);
+			}
+		}else if(widgetName.equals(Mediator.TEXT_textPoissonsRatio)){
+			if(med.getBtnConstant3_PR().getSelection()){
+				obj.setPR_Value(value);
+			}else{
+				obj.setPR_Value_T(value);
+			}
+		}
+		
 		
 		else if(widgetName.equals(Mediator.TEXT_textThermalExpansionCoefficient)){
 			obj.setTEC_Value(value);
@@ -7455,7 +7859,16 @@ public class MainController {
 			obj.setWr_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			obj.setWr_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			obj.setWr_chamferX(value);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			obj.setWr_chamferY(value);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			obj.setWr_round(value);
+		}
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			obj.setBUR_TDIA(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
 			obj.setBUR_BDIA(value);
@@ -7463,7 +7876,13 @@ public class MainController {
 			obj.setBur_len(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			obj.setBur_div_angle(value);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			obj.setBur_chamferX(value);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			obj.setBur_chamferY(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			obj.setENTRY_THK(value);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
 			obj.setSTP_WID(value);
@@ -7479,7 +7898,11 @@ public class MainController {
 			obj.setPl_m(value);
 		}else if(widgetName.equals(Mediator.TEXT_textThicknessMeshDivisions)){
 			obj.setT_div(value);
-		}else if(widgetName.equals(Mediator.TEXT_textVelocity)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			obj.setP_cr(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textVelocity)){
 			obj.setSPEED(value);
 		}else if(widgetName.equals(Mediator.TEXT_textRollGap)){
 			obj.setROL_GAP(value);
@@ -7509,7 +7932,17 @@ public class MainController {
 			obj.setBur_trot(value);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			obj.setBur_brot(value);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+		}
+		
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			obj.setYM_Roll_constant(value);
+		}else if(widgetName.equals(Mediator.TEXT_textPoissonsRatio)){
+			obj.setPR_Roll_constant(value);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
 			if(med.getBtnConstant1_YM().getSelection()){
 				obj.setYM_Value(value);
 			}else{
@@ -8373,13 +8806,16 @@ public class MainController {
 		if(type.equals("full")){
 			this.calc_lcase_time_full();
 			this.calc_lcase_dt_full();
+			this.calc_lcase_inc_full();
 			this.calc_wr_brot_full();
 			this.calc_wr_trot_full();
 			this.calc_bur_trot_full();
 			this.calc_bur_brot_full();
+			
 		}else{
 			this.calc_lcase_time();
 			this.calc_lcase_dt();
+			this.calc_lcase_inc();
 			this.calc_wr_brot();
 			this.calc_wr_trot();
 			this.calc_bur_trot();
@@ -8435,6 +8871,30 @@ public class MainController {
 		med.getTextTimeIncrement().setText(result);
 	}
 	
+	private void calc_lcase_inc(){
+		Equation eqObj = new Equation();
+		eqObj.readEquationFile();
+		String equation = eqObj.getEquation(Equation.lcase_inc);
+		String result = makeResult(equation);
+		if(this.StandValue.equals(UILabel.F1)){
+			this.tableDataPLogList.get(0).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F2)){
+			this.tableDataPLogList.get(1).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F3)){
+			this.tableDataPLogList.get(2).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F4)){
+			this.tableDataPLogList.get(3).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F5)){
+			this.tableDataPLogList.get(4).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F6)){
+			this.tableDataPLogList.get(5).setlcase_inc(result);
+		}else if(this.StandValue.equals(UILabel.F7)){
+			this.tableDataPLogList.get(6).setlcase_inc(result);
+		}
+		
+		med.getTextNoOfInc().setText(result);
+		
+	}
 	private void calc_wr_trot(){
 		Equation eqObj = new Equation();
 		eqObj.readEquationFile();
@@ -8546,6 +9006,13 @@ public class MainController {
 		eqObj.readEquationFile();
 		String eqation = eqObj.getEquation(Equation.lcase_dt);
 		makeResult_full(eqation,Equation.lcase_dt);
+	}
+	
+	private void calc_lcase_inc_full(){
+		Equation eqObj = new Equation();
+		eqObj.readEquationFile();
+		String eqation = eqObj.getEquation(Equation.lcase_inc);
+		makeResult_full(eqation,Equation.lcase_inc);
 	}
 	
 	private void calc_wr_trot_full(){
@@ -8697,10 +9164,7 @@ public class MainController {
 				newEQ = newEQ.replace(Mapping.f_r2r, value);
 			}
 			
-			if(newEQ.contains(Mapping.lcase_inc)){
-				String value = obj.getlcase_inc();
-				newEQ = newEQ.replace(Mapping.lcase_inc, value);
-			}
+			
 			if(newEQ.contains(Mapping.post_inc)){
 				String value = obj.getPost_inc();
 				newEQ = newEQ.replace(Mapping.post_inc, value);
@@ -8759,6 +9223,10 @@ public class MainController {
 			if(newEQ.contains(Mapping.lcase_dt)){
 				String value = obj.getlcase_dt();
 				newEQ = newEQ.replace(Mapping.lcase_dt, value);
+			}
+			if(newEQ.contains(Mapping.lcase_inc)){
+				String value = obj.getlcase_inc();
+				newEQ = newEQ.replace(Mapping.lcase_inc, value);
 			}
 			if(newEQ.contains(Mapping.ltime_scale)){
 				String value = obj.getLtime_scale();
@@ -8896,6 +9364,41 @@ public class MainController {
 				newEQ = newEQ.replace(Mapping.pwet, value);
 			}
 			
+			if(newEQ.contains(Mapping.wr_chamferX)){
+				String value = obj.getWr_chamferX();
+				newEQ = newEQ.replace(Mapping.wr_chamferX, value);
+			}
+			if(newEQ.contains(Mapping.wr_chamferY)){
+				String value = obj.getWr_chamferY();
+				newEQ = newEQ.replace(Mapping.wr_chamferY, value);
+			}
+			if(newEQ.contains(Mapping.wr_round)){
+				String value = obj.getWr_round();
+				newEQ = newEQ.replace(Mapping.wr_round, value);
+			}
+			if(newEQ.contains(Mapping.bur_chamferX)){
+				String value = obj.getBur_chamferY();
+				newEQ = newEQ.replace(Mapping.bur_chamferX, value);
+			}
+			if(newEQ.contains(Mapping.bur_chamferY)){
+				String value = obj.getBur_chamferY();
+				newEQ = newEQ.replace(Mapping.bur_chamferY, value);
+			}
+			if(newEQ.contains(Mapping.p_cr)){
+				String value = obj.getP_cr();
+				newEQ = newEQ.replace(Mapping.p_cr, value);
+			}
+			if(newEQ.contains(Mapping.ym_roll_value)){
+				String value = obj.getYM_Roll_constant();
+				newEQ = newEQ.replace(Mapping.ym_roll_value, value);
+			}
+			if(newEQ.contains(Mapping.pr_roll_value)){
+				String value = obj.getPR_Roll_constant();
+				newEQ = newEQ.replace(Mapping.pr_roll_value, value);
+			}
+			
+			
+			
 			ScriptEngineManager mgr = new ScriptEngineManager();
 			ScriptEngine engine = mgr.getEngineByName("JavaScript");
 			
@@ -8917,6 +9420,8 @@ public class MainController {
 				obj.setLcase_time(result);
 			}else if(key.equals(Equation.lcase_dt)){
 				obj.setlcase_dt(result);
+			}else if(key.equals(Equation.lcase_inc)){
+				obj.setlcase_inc(result);
 			}else if(key.equals(Equation.wr_trot)){
 				obj.setWr_trot(result);
 			}else if(key.equals(Equation.wr_brot)){
@@ -9050,10 +9555,7 @@ public class MainController {
 			newEQ = newEQ.replace(Mapping.f_r2r, value);
 		}
 		
-		if(newEQ.contains(Mapping.lcase_inc)){
-			String value = obj.getlcase_inc();
-			newEQ = newEQ.replace(Mapping.lcase_inc, value);
-		}
+		
 		if(newEQ.contains(Mapping.post_inc)){
 			String value = obj.getPost_inc();
 			newEQ = newEQ.replace(Mapping.post_inc, value);
@@ -9112,6 +9614,10 @@ public class MainController {
 		if(newEQ.contains(Mapping.lcase_dt)){
 			String value = obj.getlcase_dt();
 			newEQ = newEQ.replace(Mapping.lcase_dt, value);
+		}
+		if(newEQ.contains(Mapping.lcase_inc)){
+			String value = obj.getlcase_inc();
+			newEQ = newEQ.replace(Mapping.lcase_inc, value);
 		}
 		if(newEQ.contains(Mapping.ltime_scale)){
 			String value = obj.getLtime_scale();
@@ -9249,6 +9755,38 @@ public class MainController {
 			newEQ = newEQ.replace(Mapping.pwet, value);
 		}
 		
+		if(newEQ.contains(Mapping.wr_chamferX)){
+			String value = obj.getWr_chamferX();
+			newEQ = newEQ.replace(Mapping.wr_chamferX, value);
+		}
+		if(newEQ.contains(Mapping.wr_chamferY)){
+			String value = obj.getWr_chamferY();
+			newEQ = newEQ.replace(Mapping.wr_chamferY, value);
+		}
+		if(newEQ.contains(Mapping.wr_round)){
+			String value = obj.getWr_round();
+			newEQ = newEQ.replace(Mapping.wr_round, value);
+		}
+		if(newEQ.contains(Mapping.bur_chamferX)){
+			String value = obj.getBur_chamferY();
+			newEQ = newEQ.replace(Mapping.bur_chamferX, value);
+		}
+		if(newEQ.contains(Mapping.bur_chamferY)){
+			String value = obj.getBur_chamferY();
+			newEQ = newEQ.replace(Mapping.bur_chamferY, value);
+		}
+		if(newEQ.contains(Mapping.p_cr)){
+			String value = obj.getP_cr();
+			newEQ = newEQ.replace(Mapping.p_cr, value);
+		}
+		if(newEQ.contains(Mapping.ym_roll_value)){
+			String value = obj.getYM_Roll_constant();
+			newEQ = newEQ.replace(Mapping.ym_roll_value, value);
+		}
+		if(newEQ.contains(Mapping.pr_roll_value)){
+			String value = obj.getPR_Roll_constant();
+			newEQ = newEQ.replace(Mapping.pr_roll_value, value);
+		}
 		
 		//System.out.println("New EQ : "+newEQ);
 		

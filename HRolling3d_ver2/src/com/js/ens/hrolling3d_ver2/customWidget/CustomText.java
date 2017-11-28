@@ -38,7 +38,18 @@ public class CustomText implements ICommand {
 		}else if(widgetName.equals(Mediator.TEXT_textWRMeshAngle)){
 			value = med.getTextWRMeshAngle().getText().trim();
 			MC.ChangedTextWidget(value,Mediator.TEXT_textWRMeshAngle);
-		}else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
+		}else if(widgetName.equals(Mediator.Text_textWRChamferX)){
+			value = med.getTextWRChamferX().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.Text_textWRChamferX);
+		}else if(widgetName.equals(Mediator.Text_textWRChamferY)){
+			value = med.getTextWRChamferY().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.Text_textWRChamferY);
+		}else if(widgetName.equals(Mediator.Text_textWRRound)){
+			value = med.getTextWRRound().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.Text_textWRRound);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textTopBURDiameter)){
 			value = med.getTextTopBURDiameter().getText().trim();
 			MC.ChangedTextWidget(value,Mediator.TEXT_textTopBURDiameter);
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURDiameter)){
@@ -50,7 +61,16 @@ public class CustomText implements ICommand {
 		}else if(widgetName.equals(Mediator.TEXT_textBURMeshAngle)){
 			value = med.getTextBURMeshAngle().getText().trim();
 			MC.ChangedTextWidget(value,Mediator.TEXT_textBURMeshAngle);
-		}else if(widgetName.equals(Mediator.TEXT_textThickness)){
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferX)){
+			value = med.getTextBURChamferX().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.TEXT_textBURChamferX);
+		}else if(widgetName.equals(Mediator.TEXT_textBURChamferY)){
+			value = med.getTextBURChamferY().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.TEXT_textBURChamferY);
+		}
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textThickness)){
 			value = med.getTextThickness().getText().trim();
 			MC.ChangedTextWidget(value,Mediator.TEXT_textThickness);
 		}else if(widgetName.equals(Mediator.TEXT_textWidth)){
@@ -119,7 +139,22 @@ public class CustomText implements ICommand {
 		}else if(widgetName.equals(Mediator.TEXT_textBottomBURRotVel)){
 			value = med.getTextBottomBURRotVel().getText().trim();
 			MC.ChangedTextWidget(value, Mediator.TEXT_textBottomBURRotVel);
-		}else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
+		}else if(widgetName.equals(Mediator.TEXT_textPlateCrown)){
+			value = med.getTextPlateCrown().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.TEXT_textPlateCrown);
+		}
+		
+		else if(widgetName.equals(Mediator.TEXT_textRollYoungsModulus)){
+			value = med.getTextRollYoungsModulus().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.TEXT_textRollYoungsModulus);
+		}else if(widgetName.equals(Mediator.TEXT_textRollPoissonsRatio)){
+			value = med.getTextRollPoissonsRatio().getText().trim();
+			MC.ChangedTextWidget(value, Mediator.TEXT_textRollPoissonsRatio);
+		}
+		
+		
+		
+		else if(widgetName.equals(Mediator.TEXT_textYoungsModulus)){
 			value = med.getTextYoungsModulus().getText().trim();
 			MC.ChangedTextWidget(value,Mediator.TEXT_textYoungsModulus);
 		}else if(widgetName.equals(Mediator.TEXT_textFlowStress)){
@@ -178,6 +213,16 @@ public class CustomText implements ICommand {
 	public void setCustomWidget_textWRMeshAngle(){
 		this.text = med.getTextWRMeshAngle();
 	}
+	public void setCustomWidget_textWRChamferX(){
+		this.text = med.getTextWRChamferX();
+	}
+	public void setCustomWidget_textWRChamferY(){
+		this.text = med.getTextWRChamferY();
+	}
+	public void setCustomWidget_textWRRound(){
+		this.text = med.getTextWRRound();
+	}
+	
 	public void setCustomWidget_textTopBURDiameter(){
 		this.text = med.getTextTopBURDiameter();
 	}
@@ -190,6 +235,13 @@ public class CustomText implements ICommand {
 	public void setCustomWidget_textBURMeshAngle(){
 		this.text = med.getTextBURMeshAngle();
 	}
+	public void setCustomWidget_textBURChamferX(){
+		this.text = med.getTextBURChamferX();
+	}
+	public void setCustomWidget_textBURChamfery(){
+		this.text = med.getTextBURChamferY();
+	}
+	
 	public void setCustomWidget_textThickness(){
 		this.text = med.getTextThickness();
 	}
@@ -214,6 +266,10 @@ public class CustomText implements ICommand {
 	public void setCustomWidget_textThicknessMeshDivisions(){
 		this.text = med.getTextThicknessMeshDivisions();
 	}
+	public void setCustomWidget_textPlateCrown(){
+		this.text = med.getTextPlateCrown();
+	}
+	
 	public void setCustomWidget_textVelocity(){
 		this.text = med.getTextVelocity();
 	}
@@ -258,6 +314,13 @@ public class CustomText implements ICommand {
 	}
 	public void setCustomWidget_textBottomBURRotVel(){
 		this.text = med.getTextBottomBURRotVel();
+	}
+	
+	public void setCustomWidget_textRollYoungsModulus(){
+		this.text = med.getTextRollYoungsModulus();
+	}
+	public void setCustomWidget_textRollPossionRatio(){
+		this.text = med.getTextRollPoissonsRatio();
 	}
 	
 	

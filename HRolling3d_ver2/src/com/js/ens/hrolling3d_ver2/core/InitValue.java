@@ -109,15 +109,20 @@ public class InitValue {
 	//group1 - F1
 	public static String wr_len_F1 = "wr_len_F1";
 	public static String wr_div_angle_F1 = "wr_div_angle_F1";
-
+	public static String wr_chamferX_F1 = "wr_chamferX_F1";
+	public static String wr_chamferY_F1 = "wr_chamferY_F1";
+	public static String wr_round_F1 = "wr_round_F1";
 	//group2
 	public static String bur_len_F1 = "bur_len_F1";
 	public static String bur_div_angle_F1 = "bur_div_angle_F1";
+	public static String bur_chamferX_F1 = "bur_chamferX_F1";
+	public static String bur_chamferY_F1 = "bur_chamferY_F1";
 
 	//group3
 	public static String p_in_F1 = "p_in_F1";
 	public static String pl_m_F1 = "pl_m_F1";
 	public static String t_div_F1 = "t_div_F1";
+	public static String p_cr_F1 = "p_cr_F1";
 	
 
 	//group4
@@ -129,6 +134,10 @@ public class InitValue {
 	public static String wr_brot_F1="wr_brot_F1";
 	public static String bur_trot_F1="bur_trot_F1";
 	public static String bur_brot_F1="bur_brot_F1";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F1 ="YM_Roll_Constant_F1";
+	public static String PR_Roll_Constant_F1 = "PR_Roll_Constant_F1";
 	
 	//group5
 	public static String YM_Constant_F1 = "YM_Constant_F1";
@@ -163,15 +172,21 @@ public class InitValue {
 	// group1 - F2
 	public static String wr_len_F2 = "wr_len_F2";
 	public static String wr_div_angle_F2 = "wr_div_angle_F2";
+	public static String wr_chamferX_F2 = "wr_chamferX_F2";
+	public static String wr_chamferY_F2 = "wr_chamferY_F2";
+	public static String wr_round_F2 = "wr_round_F2";
 
 	//group2
 	public static String bur_len_F2 = "bur_len_F2";
 	public static String bur_div_angle_F2 = "bur_div_angle_F2";
+	public static String bur_chamferX_F2 = "bur_chamferX_F2";
+	public static String bur_chamferY_F2 = "bur_chamferY_F2";
 
 	//group3
 	public static String p_in_F2 = "p_in_F2";
 	public static String pl_m_F2 = "pl_m_F2";
 	public static String t_div_F2 = "t_div_F2";
+	public static String p_cr_F2 = "p_cr_F2";
 
 	//group4
 	public static String f_r2p_F2 = "f_r2p_F2";
@@ -182,6 +197,10 @@ public class InitValue {
 	public static String wr_brot_F2="wr_brot_F2";
 	public static String bur_trot_F2="bur_trot_F2";
 	public static String bur_brot_F2="bur_brot_F2";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F2 ="YM_Roll_Constant_F2";
+	public static String PR_Roll_Constant_F2 = "PR_Roll_Constant_F2";
 	
 	//group5
 	public static String YM_Constant_F2 = "YM_Constant_F2";
@@ -217,15 +236,21 @@ public class InitValue {
 	//group1 F3
 	public static String wr_len_F3 = "wr_len_F3";
 	public static String wr_div_angle_F3 = "wr_div_angle_F3";
+	public static String wr_chamferX_F3 = "wr_chamferX_F3";
+	public static String wr_chamferY_F3 = "wr_chamferY_F3";
+	public static String wr_round_F3 = "wr_round_F3";
 
 	//group2
 	public static String bur_len_F3 = "bur_len_F3";
 	public static String bur_div_angle_F3 = "bur_div_angle_F3";
+	public static String bur_chamferX_F3 = "bur_chamferX_F3";
+	public static String bur_chamferY_F3 = "bur_chamferY_F3";
 
 	//group3
 	public static String p_in_F3 = "p_in_F3";
 	public static String pl_m_F3 = "pl_m_F3";
 	public static String t_div_F3 = "t_div_F3";
+	public static String p_cr_F3 = "p_cr_F3";
 
 	//group4
 	public static String f_r2p_F3 = "f_r2p_F3";
@@ -236,6 +261,10 @@ public class InitValue {
 	public static String wr_brot_F3="wr_brot_F3";
 	public static String bur_trot_F3="bur_trot_F3";
 	public static String bur_brot_F3="bur_brot_F3";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F3 ="YM_Roll_Constant_F3";
+	public static String PR_Roll_Constant_F3 = "PR_Roll_Constant_F3";
 	
 	//group5
 	public static String YM_Constant_F3 = "YM_Constant_F3";
@@ -270,15 +299,21 @@ public class InitValue {
 	//group1 -F4
 	public static String wr_len_F4 = "wr_len_F4";
 	public static String wr_div_angle_F4 = "wr_div_angle_F4";
-
+	public static String wr_chamferX_F4 = "wr_chamferX_F4";
+	public static String wr_chamferY_F4 = "wr_chamferY_F4";
+	public static String wr_round_F4 = "wr_round_F4";
+	
 	//group2
 	public static String bur_len_F4 = "bur_len_F4";
 	public static String bur_div_angle_F4 = "bur_div_angle_F4";
+	public static String bur_chamferX_F4 = "bur_chamferX_F4";
+	public static String bur_chamferY_F4 = "bur_chamferY_F4";
 
 	//group3
 	public static String p_in_F4 = "p_in_F4";
 	public static String pl_m_F4 = "pl_m_F4";
 	public static String t_div_F4 = "t_div_F4";
+	public static String p_cr_F4 = "p_cr_F4";
 
 	//group4
 	public static String f_r2p_F4 = "f_r2p_F4";
@@ -289,6 +324,10 @@ public class InitValue {
 	public static String wr_brot_F4="wr_brot_F4";
 	public static String bur_trot_F4="bur_trot_F4";
 	public static String bur_brot_F4="bur_brot_F4";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F4 ="YM_Roll_Constant_F4";
+	public static String PR_Roll_Constant_F4 = "PR_Roll_Constant_F4";
 
 	//group5
 	public static String YM_Constant_F4 = "YM_Constant_F4";
@@ -323,15 +362,21 @@ public class InitValue {
 	//group1 - F5
 	public static String wr_len_F5 = "wr_len_F5";
 	public static String wr_div_angle_F5 = "wr_div_angle_F5";
+	public static String wr_chamferX_F5 = "wr_chamferX_F5";
+	public static String wr_chamferY_F5 = "wr_chamferY_F5";
+	public static String wr_round_F5 = "wr_round_F5";
 
 	//group2
 	public static String bur_len_F5 = "bur_len_F5";
 	public static String bur_div_angle_F5 = "bur_div_angle_F5";
+	public static String bur_chamferX_F5 = "bur_chamferX_F5";
+	public static String bur_chamferY_F5 = "bur_chamferY_F5";
 
 	//group3
 	public static String p_in_F5 = "p_in_F5";
 	public static String pl_m_F5 = "pl_m_F5";
 	public static String t_div_F5 = "t_div_F5";
+	public static String p_cr_F5 = "p_cr_F5";
 
 	//group4
 	public static String f_r2p_F5 = "f_r2p_F5";
@@ -342,6 +387,10 @@ public class InitValue {
 	public static String wr_brot_F5="wr_brot_F5";
 	public static String bur_trot_F5="bur_trot_F5";
 	public static String bur_brot_F5="bur_brot_F5";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F5 ="YM_Roll_Constant_F5";
+	public static String PR_Roll_Constant_F5 = "PR_Roll_Constant_F5";
 
 	//group5
 	public static String YM_Constant_F5 = "YM_Constant_F5";
@@ -377,15 +426,21 @@ public class InitValue {
 	//group1 - F6
 	public static String wr_len_F6 = "wr_len_F6";
 	public static String wr_div_angle_F6 = "wr_div_angle_F6";
+	public static String wr_chamferX_F6 = "wr_chamferX_F6";
+	public static String wr_chamferY_F6 = "wr_chamferY_F6";
+	public static String wr_round_F6 = "wr_round_F6";
 
 	//group2
 	public static String bur_len_F6 = "bur_len_F6";
 	public static String bur_div_angle_F6 = "bur_div_angle_F6";
+	public static String bur_chamferX_F6 = "bur_chamferX_F6";
+	public static String bur_chamferY_F6 = "bur_chamferY_F6";
 
 	//group3
 	public static String p_in_F6 = "p_in_F6";
 	public static String pl_m_F6 = "pl_m_F6";
 	public static String t_div_F6 = "t_div_F6";
+	public static String p_cr_F6 = "p_cr_F6";
 
 	//group4
 	public static String f_r2p_F6 = "f_r2p_F6";
@@ -396,6 +451,10 @@ public class InitValue {
 	public static String wr_brot_F6="wr_brot_F6";
 	public static String bur_trot_F6="bur_trot_F6";
 	public static String bur_brot_F6="bur_brot_F6";
+	
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F6 ="YM_Roll_Constant_F6";
+	public static String PR_Roll_Constant_F6 = "PR_Roll_Constant_F6";
 
 	//group5
 	public static String YM_Constant_F6 = "YM_Constant_F6";
@@ -430,15 +489,21 @@ public class InitValue {
 	//group1 - F7
 	public static String wr_len_F7 = "wr_len_F7";
 	public static String wr_div_angle_F7 = "wr_div_angle_F7";
+	public static String wr_chamferX_F7 = "wr_chamferX_F7";
+	public static String wr_chamferY_F7 = "wr_chamferY_F7";
+	public static String wr_round_F7 = "wr_round_F7";
 
 	//group2
 	public static String bur_len_F7 = "bur_len_F7";
 	public static String bur_div_angle_F7 = "bur_div_angle_F7";
+	public static String bur_chamferX_F7 = "bur_chamferX_F7";
+	public static String bur_chamferY_F7 = "bur_chamferY_F7";
 
 	//group3
 	public static String p_in_F7 = "p_in_F7";
 	public static String pl_m_F7 = "pl_m_F7";
 	public static String t_div_F7 = "t_div_F7";
+	public static String p_cr_F7 = "p_cr_F7";
 
 	//group4
 	public static String f_r2p_F7 = "f_r2p_F7";
@@ -450,6 +515,10 @@ public class InitValue {
 	public static String bur_trot_F7="bur_trot_F7";
 	public static String bur_brot_F7="bur_brot_F7";
 
+	//group Roll Material Parameter
+	public static String YM_Roll_Constant_F7 ="YM_Roll_Constant_F7";
+	public static String PR_Roll_Constant_F7 = "PR_Roll_Constant_F7";
+	
 	//group5
 	public static String YM_Constant_F7 = "YM_Constant_F7";
 	public static String YM_Table_F7 = "YM_Table_F7";
@@ -677,6 +746,22 @@ public class InitValue {
 	public static String BUR_WEAR_F7 = "BUR WEAR_F7";
 	public static String WR_WEAR_F7 = "WR WEAR_F7";
 	public static String WR_THRM_F7 = "WR THRM_F7";
+	
+	public static String f1f4_wr_min_r = "f1f4_wr_min_r";
+	public static String f5f7_wr_min_r = "f5f7_wr_min_r";
+	
+	public static String f1f4_wr_round_min_r = "f1f4_wr_round_min_r";
+	public static String f5f7_wr_round_min_r = "f5f7_wr_round_min_r";
+	public static String f1f7_bur_round_min_r = "f1f7_bur_round_min_r";
+
+	public static String f1f4_wr_max_round = "f1f4_wr_max_round";
+	public static String f5f7_wr_max_round = "f5f7_wr_max_round";
+
+	public static String f1f7_bur_min_r = "f1f7_bur_min_r";
+	public static String f1f4_wr_max_cx = "f1f4_wr_max_cx";
+	public static String f5f7_wr_max_cx = "f5f7_wr_max_cx";
+	public static String f1f7_bur_max_cx = "f1f7_bur_max_cx";
+	
 
 	public String getYM_tableValuePath() {
 		return YM_tableValuePath;
@@ -708,6 +793,94 @@ public class InitValue {
 
 	public void setPR_tableValuePath(String pR_tableValuePath) {
 		PR_tableValuePath = pR_tableValuePath;
+	}
+
+	public static String getF1f4_wr_min_r() {
+		return f1f4_wr_min_r;
+	}
+
+	public static void setF1f4_wr_min_r(String f1f4_wr_min_r) {
+		InitValue.f1f4_wr_min_r = f1f4_wr_min_r;
+	}
+
+	public static String getF5f7_wr_min_r() {
+		return f5f7_wr_min_r;
+	}
+
+	public static void setF5f7_wr_min_r(String f5f7_wr_min_r) {
+		InitValue.f5f7_wr_min_r = f5f7_wr_min_r;
+	}
+
+	public static String getF1f4_wr_round_min_r() {
+		return f1f4_wr_round_min_r;
+	}
+
+	public static void setF1f4_wr_round_min_r(String f1f4_wr_round_min_r) {
+		InitValue.f1f4_wr_round_min_r = f1f4_wr_round_min_r;
+	}
+
+	public static String getF5f7_wr_round_min_r() {
+		return f5f7_wr_round_min_r;
+	}
+
+	public static void setF5f7_wr_round_min_r(String f5f7_wr_round_min_r) {
+		InitValue.f5f7_wr_round_min_r = f5f7_wr_round_min_r;
+	}
+
+	public static String getF1f7_bur_round_min_r() {
+		return f1f7_bur_round_min_r;
+	}
+
+	public static void setF1f7_bur_round_min_r(String f1f7_bur_round_min_r) {
+		InitValue.f1f7_bur_round_min_r = f1f7_bur_round_min_r;
+	}
+
+	public static String getF1f4_wr_max_round() {
+		return f1f4_wr_max_round;
+	}
+
+	public static void setF1f4_wr_max_round(String f1f4_wr_max_round) {
+		InitValue.f1f4_wr_max_round = f1f4_wr_max_round;
+	}
+
+	public static String getF5f7_wr_max_round() {
+		return f5f7_wr_max_round;
+	}
+
+	public static void setF5f7_wr_max_round(String f5f7_wr_max_round) {
+		InitValue.f5f7_wr_max_round = f5f7_wr_max_round;
+	}
+
+	public static String getF1f7_bur_min_r() {
+		return f1f7_bur_min_r;
+	}
+
+	public static void setF1f7_bur_min_r(String f1f7_bur_min_r) {
+		InitValue.f1f7_bur_min_r = f1f7_bur_min_r;
+	}
+
+	public static String getF1f4_wr_max_cx() {
+		return f1f4_wr_max_cx;
+	}
+
+	public static void setF1f4_wr_max_cx(String f1f4_wr_max_cx) {
+		InitValue.f1f4_wr_max_cx = f1f4_wr_max_cx;
+	}
+
+	public static String getF5f7_wr_max_cx() {
+		return f5f7_wr_max_cx;
+	}
+
+	public static void setF5f7_wr_max_cx(String f5f7_wr_max_cx) {
+		InitValue.f5f7_wr_max_cx = f5f7_wr_max_cx;
+	}
+
+	public static String getF1f7_bur_max_cx() {
+		return f1f7_bur_max_cx;
+	}
+
+	public static void setF1f7_bur_max_cx(String f1f7_bur_max_cx) {
+		InitValue.f1f7_bur_max_cx = f1f7_bur_max_cx;
 	}
 	
 }

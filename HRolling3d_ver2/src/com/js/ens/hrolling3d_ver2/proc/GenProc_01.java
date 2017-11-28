@@ -436,6 +436,79 @@ public class GenProc_01 {
 				
 			}
 			
+			else if(line.contains(ProcMaker.wr_chamferX)){
+				String newLine = line.replace(ProcMaker.wr_chamferX, plogObj.get(StandType).getWr_chamferX());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.wr_chamferY)){
+				String newLine = line.replace(ProcMaker.wr_chamferY, plogObj.get(StandType).getWr_chamferY());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.wr_round)){
+				String newLine = line.replace(ProcMaker.wr_round, plogObj.get(StandType).getWr_round());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.bur_chamferX)){
+				String newLine = line.replace(ProcMaker.bur_chamferX, plogObj.get(StandType).getBur_chamferX());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.bur_chamferY)){
+				String  newLine = line.replace(ProcMaker.bur_chamferY, plogObj.get(StandType).getBur_chamferY());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.p_cr)){
+				String newLine = line.replace(ProcMaker.p_cr, plogObj.get(StandType).getP_cr());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.YM_ROLL_VALUE)){
+				String newLine = line.replace(ProcMaker.YM_ROLL_VALUE, plogObj.get(StandType).getYM_Roll_constant());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.PR_ROLL_VALUE)){
+				String newLine = line.replace(ProcMaker.PR_ROLL_VALUE, plogObj.get(StandType).getPR_Roll_constant());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.f1f4_wr_min_r)){
+				String newLine = line.replace(ProcMaker.f1f4_wr_min_r, plogObj.get(StandType).getF1f4_wr_min_r());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f5f7_wr_min_r)){
+				String newLine = line.replace(ProcMaker.f5f7_wr_min_r, plogObj.get(StandType).getF5f7_wr_min_r());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.f1f4_wr_round_min_r)){
+				String newLine = line.replace(ProcMaker.f1f4_wr_round_min_r, plogObj.get(StandType).getF1f4_wr_round_min_r());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f5f7_wr_round_min_r)){
+				String newLine = line.replace(ProcMaker.f5f7_wr_round_min_r, plogObj.get(StandType).getF5f7_wr_round_min_r());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f1f7_bur_round_min_r)){
+				String newLine = line.replace(ProcMaker.f1f7_bur_round_min_r, plogObj.get(StandType).getF1f7_bur_round_min_r());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.f1f4_wr_max_round)){
+				String newLine = line.replace(ProcMaker.f1f4_wr_max_round, plogObj.get(StandType).getF1f4_wr_max_round());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f5f7_wr_max_round)){
+				String newLine = line.replace(ProcMaker.f5f7_wr_max_round, plogObj.get(StandType).getF5f7_wr_max_round());
+				procDataList.add(newLine);
+			}
+			
+			else if(line.contains(ProcMaker.f1f7_bur_min_r)){
+				String newLine = line.replace(ProcMaker.f1f7_bur_min_r, plogObj.get(StandType).getF1f7_bur_min_r());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f1f4_wr_max_cx)){
+				String newLine = line.replace(ProcMaker.f1f4_wr_max_cx, plogObj.get(StandType).getF1f4_wr_max_cx());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f5f7_wr_max_cx)){
+				String newLine = line.replace(ProcMaker.f5f7_wr_max_cx, plogObj.get(StandType).getF5f7_wr_max_cx());
+				procDataList.add(newLine);
+			}else if(line.contains(ProcMaker.f1f7_bur_max_cx)){
+				String newLine = line.replace(ProcMaker.f1f7_bur_max_cx, plogObj.get(StandType).getF1f7_bur_max_cx());
+				procDataList.add(newLine);
+			}
+			
 			else{
 				procDataList.add(line);
 			}
